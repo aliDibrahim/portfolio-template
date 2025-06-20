@@ -1,0 +1,157 @@
+// Start Settings Box
+.settings-box {
+  &.open {
+    left: 0px;
+    .fa-cog {
+      rotate: 360deg;
+    }
+  }
+  position: fixed;
+  width: 200px;
+  height: 100vh;
+  left: -200px;
+  top: 0px;
+  background-color: whitesmoke;
+  transition: 0.3s;
+  border: 1px solid #eee;
+  z-index: 10;
+  .toggle-settings {
+    position: absolute;
+    top: 150px;
+    text-align: center;
+    right: -30px;
+    background-color: whitesmoke;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+    .fa-cog {
+      transition: 1s rotate;
+      padding: 8px 0;
+      width: 30px;
+    }
+  }
+  .settings-container {
+    .option-box {
+      padding: 20px;
+      margin: 15px;
+      text-align: center;
+      background-color: #ccc;
+      border-radius: 10px;
+      h4 {
+        margin: 0px 0px 15px;
+        color: #777;
+      }
+      .colors-list {
+        list-style: none;
+        padding-left: 0;
+        text-align: center;
+        margin: 15px 0px 0px;
+        li {
+          display: inline-block;
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          opacity: 0.5;
+          cursor: pointer;
+          transition: 0.3s;
+          &:first-child {
+            background-color: #ff9800;
+          }
+          &:nth-child(2) {
+            background-color: #f00;
+          }
+          &:nth-child(3) {
+            background-color: #009688;
+          }
+          &:nth-child(4) {
+            background-color: #03a9f4;
+          }
+          &:nth-child(5) {
+            background-color: #4caf50;
+          }
+          &.active {
+            opacity: 1;
+            scale: 1.2;
+          }
+        }
+      }
+      span.yesSpan,
+      span.noSpan {
+        display: inline-block;
+        background-color: #777;
+        color: white;
+        font-weight: bold;
+        padding: 5px 10px;
+        border-radius: 10px;
+        opacity: 0.5;
+        cursor: pointer;
+        &.active {
+          opacity: 1;
+          background-color: #4caf50;
+        }
+      }
+      .reset {
+        font-weight: bold;
+        padding: 5px 10px;
+        background-color: var(--main-color);
+        border-radius: 10px;
+        opacity: 0.6;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+// End Settings Box
+// **********************************************
+// Start bullets
+.bullets {
+  ul {
+    list-style: none;
+    position: fixed;
+    top: 300px;
+    right: 30px;
+    z-index: 99;
+    a {
+      display: block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 3px solid var(--main-color);
+      margin-bottom: 25px;
+      position: relative;
+      z-index: 1000;
+      &::before {
+        content: attr(data-section);
+        position: absolute;
+        width: 125px;
+        padding: 6px;
+        border-radius: 2px;
+        background-color: var(--main-color);
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        left: -150px;
+        top: -7px;
+        opacity: 0;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        border: 9px solid;
+        border-color: transparent transparent transparent var(--main-color);
+        right: 9px;
+        top: -2px;
+        opacity: 0;
+      }
+      &:hover::before,
+      &:hover::after {
+        opacity: 1;
+      }
+    }
+  }
+}
+// End bullets
+// **********************************************

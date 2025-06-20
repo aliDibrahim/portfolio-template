@@ -1,0 +1,28 @@
+.about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .container {
+    display: flex;
+    align-items: center;
+    .info {
+      h2 {
+        margin: 0 0 20px;
+        font-weight: bold;
+        font-size: 40px;
+        text-align: center;
+        color: var(--main-color);
+      }
+      p {
+        color: #777;
+        line-height: 1.7;
+        margin: 0;
+      }
+    }
+    .image {
+      margin: auto;
+      img {
+        max-width: 300px;
+      }
+    }
+  }
+}

@@ -1,0 +1,105 @@
+.time-line-section {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  background-color: #eee;
+  h2 {
+    font-size: 40px;
+    color: var(--main-color);
+    text-align: center;
+    margin: 0 0 50px;
+  }
+  .timeline {
+    position: relative;
+    height: 1500px;
+    .year {
+      position: absolute;
+      width: 4px;
+      height: 100%;
+      background-color: var(--main-color);
+      left: 50%;
+      margin-left: -2px;
+      .year-2023,
+      .year-2020 {
+        position: absolute;
+        background-color: var(--main-color);
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        width: 100px;
+        padding: 10px 0;
+        margin-left: -50px;
+        text-align: center;
+        border-radius: 10px;
+      }
+      .year-2023 {
+        top: 40px;
+      }
+      .year-2020 {
+        top: 800px;
+      }
+    }
+    .box {
+      position: absolute;
+      width: 400px;
+      background-color: white;
+      padding: 10px;
+      border-radius: 10px;
+      left: 50%;
+      &::before {
+        content: "";
+        position: absolute;
+        border: 15px solid;
+        top: 20px;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 3px solid var(--main-color);
+        background-color: white;
+        top: 23px;
+      }
+      h3 {
+        color: var(--main-color);
+      }
+      p {
+        color: #777;
+        line-height: 1.7;
+      }
+    }
+    .left {
+      translate: -430px 0;
+      &::before {
+        right: -30px;
+        border-color: transparent transparent transparent var(--main-color);
+      }
+      &::after {
+        right: -40px;
+      }
+    }
+    .right {
+      translate: 30px;
+      &::before {
+        left: -30px;
+        border-color: transparent var(--main-color) transparent transparent;
+      }
+      &::after {
+        left: -40px;
+      }
+    }
+    .one {
+      top: 200px;
+    }
+    .two {
+      top: 500px;
+    }
+    .three {
+      top: 950px;
+    }
+    .four {
+      top: 1300px;
+    }
+  }
+}

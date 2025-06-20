@@ -1,0 +1,28 @@
+// helpers import
+@import "sass/helpers/variables";
+@import "sass/helpers/mixins";
+// components import
+@import "sass/components/buttons";
+@import "sass/components/setting";
+// pages import
+@import "sass/Sections/landingPage";
+@import "sass/Sections/aboutUs";
+@import "sass/Sections/timeLine";
+@import "sass/Sections/skills&gallery";
+@import "sass/Sections/Features&Testimonials";
+@import "sass/Sections/contact&footer";
+// layout import
+@import "sass/layout/container+responsive";
+
+// ****************************************************
+// Start Global Rules
+body {
+  font-family: "Open Sans", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+// End Global Rules
