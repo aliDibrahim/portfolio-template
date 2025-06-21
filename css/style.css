@@ -156,6 +156,7 @@
   background-image: url(/images/01.jpg);
   background-size: cover;
   position: relative;
+  transition-duration: 0.5s;
 }
 .landing-page .overlay {
   position: absolute;
@@ -187,6 +188,7 @@
 .landing-page .header-area .links li {
   display: inline-block;
   margin-left: 10px;
+  margin-bottom: 10px;
 }
 .landing-page .header-area .links li a {
   color: #fff;
@@ -209,7 +211,7 @@
 }
 .introduction-text h1 {
   font-size: 35px;
-  margin: 0 0 12px;
+  margin: 25px 0 12px;
 }
 .introduction-text h1 span {
   color: var(--main-color);
@@ -445,7 +447,6 @@
   height: 350px;
 }
 .popup-box h3 {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   height: 40px;
@@ -597,12 +598,6 @@
   color: var(--main-color);
   font-weight: bold;
 }
-.contact .container input:-ms-input-placeholder, .contact .container textarea:-ms-input-placeholder {
-  -ms-transition: 0.3s;
-  transition: 0.3s;
-  color: var(--main-color);
-  font-weight: bold;
-}
 .contact .container input::placeholder,
 .contact .container textarea::placeholder {
   transition: 0.3s;
@@ -614,9 +609,6 @@
   outline: none;
 }
 .contact .container input:focus::-moz-placeholder, .contact .container textarea:focus::-moz-placeholder {
-  opacity: 0;
-}
-.contact .container input:focus:-ms-input-placeholder, .contact .container textarea:focus:-ms-input-placeholder {
   opacity: 0;
 }
 .contact .container input:focus::placeholder,
@@ -701,8 +693,8 @@
 }
 @media (max-width: 668px) {
   .popup-box img {
-    width: 350px;
-    height: 250px;
+    width: 300px;
+    height: 200px;
   }
 }
 @media (max-width: 991px) {

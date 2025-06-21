@@ -59,8 +59,8 @@ function randomImageRun() {
   let iden = setInterval(() => {
     // genrate random number
     let num = Math.floor(Math.random() * 10);
-    landingImage.style.backgroundImage = `URL(/images/${images[num]})`;
-  }, 15000);
+    landingImage.style.backgroundImage = `URL(images/${images[num]})`;
+  }, 10000);
   return iden;
 }
 // *****************************************

@@ -3,6 +3,7 @@
   background-image: url(/images/01.jpg);
   background-size: cover;
   position: relative;
+  transition-duration: 0.5s;
   .overlay {
     @include overlay(rgba(0, 0, 0, 0.6));
     z-index: 1;
@@ -26,6 +27,7 @@
       li {
         display: inline-block;
         margin-left: 10px;
+        margin-bottom: 10px;
         a {
           color: #fff;
           text-decoration: none;
@@ -50,7 +52,7 @@
   width: 95%;
   h1 {
     font-size: 35px;
-    margin: 0 0 12px;
+    margin: 25px 0 12px;
     span {
       color: var(--main-color);
     }
